@@ -6,25 +6,25 @@ public class WeekendOrWeekday {
         Scanner obj = new Scanner(System.in);
         System.out.println("enter the day");
         String day = obj.next();
-        if(day.equals("monday")||(day.equals("MONDAY"))) {
+        if(day.equalsIgnoreCase("monday")){
             System.out.println("The day you entered is a weekday");
         }
-        else if(day.equals("tuesday")||(day.equals("TUESDAY"))){
+        else if(day.equalsIgnoreCase("tuesday")){
             System.out.println("The day you entered is weekday");
         }
-        else if(day.equals("wednesday")||(day.equals("WEDNESDAY"))){
+        else if(day.equalsIgnoreCase("wednesday")){
             System.out.println("The day you entered is weekday");
         }
-        else if(day.equals("thursday")||(day.equals("THURSDAY"))){
+        else if(day.equalsIgnoreCase("thursday")){
             System.out.println("The day you enterd is weekday");
         }
-        else if(day.equals("friday")||(day.equals("FRIDAY)"))){
+        else if(day.equalsIgnoreCase("friday")){
             System.out.println("The day you have entered is weekday");
         }
-        else if(day.equals("saturday")||(day.equals("SATURDAY"))){
+        else if(day.equalsIgnoreCase("saturday")){
             System.out.println("Yeah! the day you have entered is a weekend");
         }
-        else if(day.equals("sunday")||(day.equals("SUNDAY"))){
+        else if(day.equalsIgnoreCase("sunday")){
             System.out.println("Yeah! the day you have entered is a weekend");
         }
         else{
