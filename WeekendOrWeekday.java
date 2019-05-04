@@ -1,5 +1,3 @@
-import jdk.swing.interop.SwingInterOpUtils;
-
 import java.util.Scanner;
 public class WeekendOrWeekday {
     public static void main(String[] args) {
