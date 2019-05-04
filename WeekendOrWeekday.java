@@ -27,5 +27,8 @@ public class WeekendOrWeekday {
         else if(day.equals("sunday")||(day.equals("SUNDAY"))){
             System.out.println("Yeah! the day you have entered is a weekend");
         }
+        else{
+            System.out.println("invalid in put");
+        }
     }
 }
