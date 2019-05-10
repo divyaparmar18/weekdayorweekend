@@ -1,6 +1,10 @@
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class WeekendOrWeekday {
     public static void main(String[] args) {
-        String day = args[0];
+        String day = args[0].toLowerCase();
         if(isaWeekday(day)) {
             System.out.println("The day you entered is a weekday, so you have to work");
         }
@@ -13,10 +17,14 @@ public class WeekendOrWeekday {
     }
 
     private static boolean isaWeekend(String day) {
-        return day.equalsIgnoreCase("saturday")||(day.equalsIgnoreCase("sunday"));
+        return day.equals("saturday")||(day.equals("sunday"));
     }
 
     private static boolean isaWeekday(String day) {
-        return day.equalsIgnoreCase("monday")||(day.equalsIgnoreCase("tuesday"))||(day.equalsIgnoreCase("wednesday"))||(day.equalsIgnoreCase("thursday"))||(day.equalsIgnoreCase("friday"));
+        Set<String> WeekdaySet = new HashSet<>(List.of("monday","tuesday","wednesday","thursday","friday"));
+        if(WeekdaySet.contains(day)) {
+            return true;
+        }
+        return (false);
     }
 }
