@@ -9,6 +9,11 @@ java  WeekendOrWeekday thursday > actual
 diff actual expectWeekdays
 java  WeekendOrWeekday friday > actual
 diff actual expectWeekdays
+java  WeekendOrWeekday saturday > actual
+diff actual expectWeekends
+java  WeekendOrWeekday sunday > actual
+diff actual expectWeekends
+
 
 
 
